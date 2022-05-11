@@ -11,13 +11,13 @@ import numpy as np
 drive.mount('/content/drive')
 
 
-# cargamos el modelo en la siguiente dirección:
+# Cargamos el modelo en la siguiente dirección:
 modelo = load_model('/content/saved_models/audio_classification.hdf5')
 
 #cargar la dirección del archivo de audio a predecir
 filename="/content/drive/MyDrive/Uninorte/Todo_cuenta_uninorte/Puntos1-50/Splits/P5splits/Punto 01 P5.wav_segment103.wav"
 
-# cargamos el audio y extraemos coeficientes mfcc
+# Cargamos el audio y extraemos coeficientes mfcc
 audio, sample_rate = librosa.load(filename, res_type='kaiser_best') 
 mfccs_features = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=40)
 mfccs_scaled_features = np.mean(mfccs_features.T,axis=0)
