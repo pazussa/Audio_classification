@@ -31,3 +31,11 @@ print(clase_predicha)
 #predicción label
 #prediction_class = labelencoder.inverse_transform(clase_predicha) 
 #prediction_class
+
+
+# links:
+
+Model: https://github.com/pazussa/Audio_classification/blob/main/audio_classification.hdf5
+Audio classification full code: https://github.com/pazussa/Audio_classification/blob/main/Clasificador_de_audio_final.ipynb
+Tools: https://github.com/pazussa/Audio_classification/blob/main/Tools.ipynb
+Features dataset: https://github.com/pazussa/Audio_classification/blob/main/extract.csv
